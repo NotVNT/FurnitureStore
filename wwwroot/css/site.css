@@ -1,0 +1,142 @@
+﻿html {
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.top-bar {
+    background-color: #f8f9fa;
+    padding: 5px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+    .top-bar .container-fluid {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .top-bar .d-flex {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .top-bar .top-bar-left {
+        display: flex;
+        align-items: center;
+    }
+
+        .top-bar .top-bar-left a {
+            margin-right: 20px;
+        }
+
+    .top-bar .top-bar-right {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Khoảng cách giữa các icon */
+        justify-content: flex-end; /* Đẩy các nút về phía bên phải */
+    }
+
+        .top-bar .top-bar-left a,
+        .top-bar .top-bar-right a {
+            text-decoration: none;
+            color: #000;
+        }
+
+    .top-bar .top-bar-icon {
+        margin-left: 10px;
+        color: #000;
+    }
+
+.top-bar-right a {
+    margin-left: 10px; /* Giảm khoảng cách giữa các nút */
+    padding: 5px 10px; /* Giảm padding */
+    border: none; /* Loại bỏ border */
+    border-radius: 20px;
+    text-decoration: none;
+    color: #000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    .top-bar-right a:hover {
+        background-color: #f0f0f0;
+        color: red;
+    }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-brand {
+    flex: 1;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 2;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 0 15px;
+    text-align: center;
+}
+
+    .nav-item a {
+        text-decoration: none;
+        color: #000;
+    }
+
+.search-box {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: auto;
+}
+
+    .search-box input[type="text"] {
+        border: none;
+        padding: 8px 12px;
+        flex-grow: 1;
+        outline: none;
+    }
+
+    .search-box button {
+        background-color: transparent;
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+    }
+
+        .search-box button svg {
+            vertical-align: middle;
+        }
